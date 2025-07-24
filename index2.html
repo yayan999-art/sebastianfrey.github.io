@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio Fajar Adrianto</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        padding: 40px;
+        background-color: #f8f9fa;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        background-color: #0d6efd;
+        padding: 20px;
+        color: white;
+        border-radius: 8px;
+      }
+
+      .header img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-right: 20px;
+        object-fit: cover;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+
+      .content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 40px;
+      }
+
+      .section {
+        background-color: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      }
+
+      .section h2 {
+        border-left: 4px solid #0d6efd;
+        padding-left: 12px;
+        margin-bottom: 16px;
+        font-size: 1.25rem;
+        color: #0d6efd;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 16px);
+        gap: 6px;
+        margin-bottom: 16px;
+      }
+
+      .dot {
+        width: 16px;
+        height: 16px;
+        background-color: #0d6efd;
+        border-radius: 50%;
+      }
+
+      .contact-form {
+        margin-top: 60px;
+        background-color: white;
+        padding: 40px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .contact-form h2 {
+        border-left: 4px solid #0d6efd;
+        padding-left: 12px;
+        margin-bottom: 24px;
+        font-size: 1.5rem;
+        color: #0d6efd;
+      }
+
+      .contact-form label {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 6px;
+        font-weight: 600;
+      }
+
+      .contact-form input,
+      .contact-form textarea {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 1rem;
+      }
+
+      .contact-form button {
+        background-color: #0d6efd;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 6px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      .contact-form button:hover:not(:disabled) {
+        background-color: #0b5ed7;
+      }
+
+      .contact-form button:disabled {
+        background-color: #6c757d;
+        cursor: not-allowed;
+      }
+
+      .notification {
+        margin-top: 16px;
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: green;
+        transition: opacity 0.3s ease-in-out;
+      }
+
+      .notification.error {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <img src="img/frey.jpeg" alt="Foto Sebastian Frey" />
+      <h1>SEBASTIAN FREY</h1>
+    </div>
+
+    <div class="content">
+      <!-- KIRI -->
+      <div class="section">
+        <h2>PROFIL</h2>
+        <p>Seorang mahasiswa S1 Marketing di Universitas Pelita Bangsa yang memiliki kemampuan merencanakan strategi pemasaran di berbagai platform. Memiliki pengalaman di berbagai organisasi kampus dan mampu bekerja dalam tim.</p>
+
+        <h2>KONTAK</h2>
+        <p>📞 +123-456-7890<br />✉️ fajar@gmail.com<br />📍 Jakarta, Indonesia</p>
+
+        <h2>KEAHLIAN</h2>
+        <p>Professional</p>
+        <div class="skills-grid">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <p>Kerja sama</p>
+        <div class="skills-grid">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <p>Fleksibel</p>
+        <div class="skills-grid">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <p>Kreatif</p>
+        <div class="skills-grid">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+        <p>Organisasi</p>
+        <div class="skills-grid">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+      </div>
+
+      <!-- KANAN -->
+      <div class="section">
+        <h2>PENDIDIKAN</h2>
+        <p>
+          S1 Marketing - Universitas Pelita Bangsa (2023)<br />
+          SMA Harapan Jakarta (2023)
+        </p>
+
+        <h2>PENGALAMAN</h2>
+        <p>
+          <strong>Admin Media Sosial Freelance - Lush</strong><br />
+          • Merancang konten yang ditayangkan<br />
+          • Menjadwalkan konten<br />
+          • Membangun dan menjaga interaksi dengan followers
+        </p>
+
+        <p>
+          <strong>Ketua Divisi Humas BEM - Universitas Pelita Bangsa</strong><br />
+          <strong>Anggota Divisi Humas BEM - Universitas Pelita Bangsa</strong><br />
+          <strong>Anggota OSIS - SMA Harapan Jakarta</strong><br />
+          <strong>Anggota Paskibra - SMA Harapan Jakarta</strong>
+        </p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h2>Hubungi Saya</h2>
+      <form name="contact-form">
+        <label for="name">Nama</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Pesan</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" id="submitBtn">Kirim</button>
+        <div class="notification" id="notification"></div>
+      </form>
+    </div>
+
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzw-QQXM-lajjTXIJcNfbjMM1oSBkoOmevjBicgtuKvwDw1jQNoQAjkZOTBFoI0UaYrlQ/exec';
+      const form = document.forms['contact-form'];
+      const submitBtn = document.getElementById('submitBtn');
+      const notification = document.getElementById('notification');
+
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        submitBtn.disabled = true;
+        submitBtn.textContent = 'Mengirim...';
+        notification.textContent = '';
+        notification.classList.remove('error');
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+          .then((response) => {
+            form.reset();
+            notification.textContent = '✅ Pesan berhasil dikirim!';
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Kirim';
+          })
+          .catch((error) => {
+            notification.textContent = '❌ Terjadi kesalahan. Silakan coba lagi.';
+            notification.classList.add('error');
+            submitBtn.disabled = false;
+            submitBtn.textContent = 'Kirim';
+          });
+      });
+    </script>
+  </body>
+</html>
